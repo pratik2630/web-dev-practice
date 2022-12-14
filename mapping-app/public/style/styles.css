@@ -1,0 +1,49 @@
+/* body{
+    text-align: center;
+} */
+div.card{
+    border: 2px solid blue;
+    border-radius: 20px;
+    background-color: #81eaec;
+    box-shadow: 0 5px 5px #aaa;
+    height: 200px;
+    width: 400px;
+    position: relative;
+    padding: 15px;
+    left: 300px;
+    margin: 15px;
+}
+
+
+.mylogo{
+    border-radius: 50px;
+    height: 50px;
+    width: 50px ;
+    border: 2px solid black;
+    top: -20px;
+    left: -20px;
+    
+}
+
+.currentstatus {
+    border-radius: 5px;
+    background-color: #aaa;
+    width: 100px;
+    text-align: center;
+    position: relative;
+    top: -100px;
+    left: 300px;
+    box-shadow: 0 5px 5px #aaa;
+}
+
+.live-terminal {
+    border-radius: 5px;
+    background-color: #eee;
+    width: 200px;
+    height: 150px;
+    text-align: center;
+    position: relative;
+    top: -80px;
+    left: 100px;
+    box-shadow: 0 5px 5px #aba;
+}
