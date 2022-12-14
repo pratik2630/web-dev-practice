@@ -1,15 +1,21 @@
-import React from 'react';
+import React,{ useState} from 'react';
 import  ReactDOM  from 'react-dom';
-import { Card } from './components/Card';
+import { Card , Increment  } from './components/Card';
 
-function colorChange(){
-  console.log("hii")
-  document.getElementById("root").style.color = "red";
-}
+
+// To change text color
+// function colorChange(){
+  
+//   console.log("hii")
+//   document.getElementById("root").style.color = "red";
+// }
+
 ReactDOM.render(
   <div>
     <Card />
-    <button onClick={colorChange}> click me</button>
+    <Increment/>
+    
+    {/* <button onClick={colorChange}> click me</button> */}
   </div>,
   document.getElementById("root")
 )
