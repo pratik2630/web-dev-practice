@@ -2,19 +2,41 @@ import React from "react";
 import  ReactDOM  from "react-dom";
 import { Card } from "./components/card";
 import mydata from "./db";
-function createCard(data){
-    return (
+
+//  Manual function instead of annonymous function
+
+// function createCard(data){
+//     return (
+//           <Card 
+//                 status={data.status} 
+//                 terminal= {data.terminal} 
+//                 logoimg= {data.logoimg}  
+//             />
+//     )
+// }
+
+ReactDOM.render(
+   <>
+
+
+ {/* annonymous function */}
+   {mydata.map ((data)=> {
+      return (
         <Card 
     status={data.status} 
     terminal= {data.terminal} 
     logoimg= {data.logoimg}  
     />
     )
+   })}
+   
+{/* 
+   manual function example
 
-}
-ReactDOM.render(
-   <>
-   {mydata.map (createCard )}
+   {mydata.map (createCard)}
+ */}
+
+
    {/* <Card 
     status={mydata[0].status} 
     terminal= {mydata[0].terminal} 
